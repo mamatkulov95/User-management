@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface ModalWindowProps {
@@ -6,6 +7,7 @@ interface ModalWindowProps {
   btnName: string;
   signUpInText: string;
   signInUpLink: string;
+  href: string;
 }
 export default function ModalWindow({
   title,
@@ -13,11 +15,12 @@ export default function ModalWindow({
   btnName,
   signUpInText,
   signInUpLink,
+  href,
 }: ModalWindowProps) {
   return (
     <div>
       <section className="bg-gray-50 dark:bg-gray-900">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+        <div className="flex flex-col items-center justify-center px-6 py-4 mx-auto md:h-screen lg:py-0">
           <a
             href="#"
             className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
@@ -70,12 +73,12 @@ export default function ModalWindow({
                 </button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   {signUpInText}
-                  <a
-                    href="#"
+                  <Link
+                    href={href}
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
                     {signInUpLink}{" "}
-                  </a>
+                  </Link>
                 </p>
               </form>
             </div>
