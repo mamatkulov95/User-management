@@ -8,8 +8,8 @@ interface Link {
 }
 
 const links: Link[] = [
-  { id: 1, href: "/sign-in", menu: "Sign In" },
-  { id: 2, href: "/sign-up", menu: "Sign Up" },
+  { id: 1, href: "/login", menu: "Sign In" },
+  { id: 2, href: "/registration", menu: "Sign Up" },
 ];
 
 export default function Header() {
