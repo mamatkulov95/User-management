@@ -1,5 +1,3 @@
-import styles from "@/styles/Home.module.css";
-
 interface TableHeader {
   id: number;
   header: string;
