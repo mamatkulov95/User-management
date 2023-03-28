@@ -14,7 +14,7 @@ const links: Link[] = [
 
 export default function Header() {
   return (
-    <div className="py-3 px-12 bg-green-300 fixed top-0 w-full flex items-center justify-between ">
+    <div className="py-3 px-12 bg-green-300 fixed top-0 w-full h-12 flex items-center justify-between ">
       <Link href="/">Home</Link>
 
       <ul
